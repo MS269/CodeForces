@@ -14,9 +14,7 @@ int main() {
     for (int i = 0; i < n; ++i) { cin >> a[i]; }
     sort(a.begin(), a.end());
     bool is_possible = true;
-    for (int i = 1; i < n; ++i) {
-      if (abs(a[i] - a[i - 1]) > 1) { is_possible = false; }
-    }
+    for (int i = 1; i < n; ++i) { if (abs(a[i] - a[i - 1]) > 1) { is_possible = false; } }
     if (is_possible) { cout << "YES\n"; }
     else { cout << "NO\n"; }
   }
