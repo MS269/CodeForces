@@ -22,10 +22,10 @@ void TestCase() {
   ll ans = LLONG_MIN;
   if (zero_exists) ans = 0;
   for (int i = 0; i <= 5; ++i) {
-    ll cur = 1;
-    for (int j = 0; j < i; ++j) cur *= a[j];
-    for (int j = i; j < 5; ++j) cur *= a[n - 1 - (j - i)];
-    ans = max(ans, cur);
+    ll temp = 1;
+    for (int j = 0; j < i; ++j) temp *= a[j];
+    for (int j = i; j < 5; ++j) temp *= a[n - 1 - (j - i)];
+    ans = max(ans, temp);
   }
   cout << ans << '\n';
   a.clear();
