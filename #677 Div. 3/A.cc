@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const vector<int> kFactorial{1, 1, 3, 6, 10};
+const vector<int> kAdd{0, 1, 3, 6, 10};
 
 int main() {
 #ifdef _DEBUG
@@ -14,7 +14,7 @@ int main() {
   while (t--) {
     string x;
     cin >> x;
-    cout << 10 * (x[0] - '1') + kFactorial[x.size()] << '\n';
+    cout << 10 * (x[0] - '1') + kAdd[x.size()] << '\n';
   }
   return 0;
 }
