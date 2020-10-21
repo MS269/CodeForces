@@ -14,6 +14,9 @@ int Find(const vector<int>& a) {
 }
 
 int main() {
+#ifdef _DEBUG
+  freopen("input.txt", "r", stdin);
+#endif // _DEBUG
   ios_base::sync_with_stdio(false); cin.tie(nullptr);
   int t;
   cin >> t;
