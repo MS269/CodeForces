@@ -15,20 +15,20 @@ int main()
     while (t--)
     {
         int x;
-        bool isYes = false;
+        bool is_yes = false;
         cin >> x;
         for (int i = 0; i < 20; ++i)
         {
             if (x % 11 == 0)
             {
-                isYes = true;
+                is_yes = true;
                 break;
             }
             x -= 111;
             if (x < 0)
                 break;
         }
-        cout << (isYes ? "YES" : "NO") << '\n';
+        cout << (is_yes ? "YES" : "NO") << '\n';
     }
     return 0;
 }
